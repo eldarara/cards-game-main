@@ -1,38 +1,70 @@
 body{
-    background-color:blue;
+    background-color:#004980;
+    
 }
 
+@font-face {
+    font-family: moy;
+    src: url(/Web_fonts/stratosskyengweb-regular.woff);
+  }
+
 .hard-level-page{
-    background-color: aqua;
+    background-color: #C2F5FF;
     width: 480px;
     height: 459px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
+    border-radius: 12px;
+    font-family: moy;
+    
 }
 .title-hard-level{
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+    font-size: 40px;
+    color:#004980
 }
 
 .hard-level-select{
     display: flex;
     justify-content:center;
     margin-bottom: 50px;
+    gap: 30px
 }
     
 .hard-level-select-button{
     width: 98px;
     height: 98px;
+    border-radius: 12px;
+    font-size: 64px;
+    border: 0;
+    color:#0080C1;
+    
 }
+
+.hard-level-select-button:hover{
+    color:orange
+}
+
 .start-game-button-div{
     display: flex;
     justify-content:center;
+    border-radius: 12px;
+    
 }
 .start-game-button{
     width: 246px;
     height: 50px;
-    
+    border-radius: 12px;
+    background-color: #7AC100;
+    font-size: 24px;
+    border: 0;
+    color:white;
+}
+
+.start-game-button:hover{
+ color:orange   
 }
