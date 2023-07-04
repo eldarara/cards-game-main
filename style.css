@@ -33,19 +33,29 @@ body{
     justify-content:center;
     margin-bottom: 50px;
     gap: 30px
+    
 }
     
-.hard-level-select-button{
-    width: 98px;
-    height: 98px;
-    border-radius: 12px;
-    font-size: 64px;
-    border: 0;
-    color:#0080C1;
-    
+.hard-level-select-input{
+    display: none;
 }
 
-.hard-level-select-button:hover{
+label {
+    display: inline-block;
+    background-color: #eee;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+input[type="radio"]:checked + label {
+    background-color: #ccc;
+}
+
+.hard-level-select-input:hover{
     color:orange
 }
 
@@ -68,3 +78,4 @@ body{
 .start-game-button:hover{
  color:orange   
 }
+
