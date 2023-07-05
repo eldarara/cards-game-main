@@ -9,33 +9,41 @@
   <body>
     <div class="containeer">
       <div class="hard-level-elem">
-        <div class="title-hard-level">Выберите сложность</div>
-
-        <div class="hard-level-select">
-          <div>
-            <input type="radio" id="easy" name="level" value="1" class="hard-level-select-input"
-            >
+        <form>
+          <p class="title-hard-level">Выберите сложность</p>
+          <div class="radio-buttons">
+            <input
+              type="radio"
+              id="easy"
+              name="level"
+              value="1"
+              class="hard-level-select-input"
+            />
             <label for="easy">1</label>
-          </div>
-      
-          <div>
-            <input type="radio" id="middle" name="level" value="2" class="hard-level-select-input"
-            >
-            <label for="dewey">2</label>
-          </div>
-      
-          <div>
-            <input type="radio" id="advanced" name="level" value="3" class="hard-level-select-input"
-            >
-            <label for="louie">3</label>
-          </div>
+
+            <input
+              type="radio"
+              id="middle"
+              name="level"
+              value="2"
+              class="hard-level-select-input"
+            />
+            <label for="middle">2</label>
+
+            <input
+              type="radio"
+              id="advanced"
+              name="level"
+              value="3"
+              class="hard-level-select-input"
+            />
+            <label for="advanced">3</label>
           </div>
           <div class="start-game-button-div">
-          <button class="start-game-button">Старт</button>
-        </div>
+            <button class="start-game-button" type="submit">Старт</button>
+          </div>
+        </form>
 
-        
-        </div>
       </div>
     </div>
   </body>

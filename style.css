@@ -3,10 +3,6 @@ body{
     
 }
 
-@font-face {
-    font-family: moy;
-    src: url(/Web_fonts/stratosskyengweb-regular.woff);
-  }
 
 .hard-level-elem{
     background-color: #C2F5FF;
@@ -28,7 +24,7 @@ body{
     color:#004980
 }
 
-.hard-level-select{
+.radio-buttons{
     display: flex;
     justify-content:center;
     margin-bottom: 50px;
@@ -61,9 +57,7 @@ input[type="radio"]:checked + label {
 
 .start-game-button-div{
     display: flex;
-    justify-content:center;
-    border-radius: 12px;
-    
+    justify-content:center;   
 }
 .start-game-button{
     width: 246px;

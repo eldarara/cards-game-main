@@ -1,14 +1,18 @@
-const hardInput = document.querySelectorAll(".hard-level-select-input");
+const hardInputs = document.querySelectorAll(".hard-level-select-input");
 const startButton = document.querySelector(".start-game-button");
 const hardLevelElem = document.querySelector(".hard-level-elem");
 const containeer = document.querySelector(".containeer");
+const form = document.querySelector("form");
 
-hardInput.forEach((elem) => {
-  elem.addEventListener("click", (event) => {
-    console.log(elem.value);
+console.log(hardInputs);
+
+hardInputs.forEach((elem) => {
+  elem.addEventListener("input", (event) => {
+    window.level = elem.value;
   });
 });
 
-startButton.addEventListener("click", (event) => {
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
   containeer.removeChild(hardLevelElem);
 });
